@@ -9,9 +9,9 @@ class CloudinaryService extends FileService {
 
         cloudinary.config({
             cloud_name: options.cloud_name,
-            api_key: options.api_key,
-            api_secret: options.api_secret,
-            secure: options.secure || true,
+			api_key: options.api_key,
+			api_secret: options.api_secret,
+			secure: options.secure || true,
         });
 	}
 
