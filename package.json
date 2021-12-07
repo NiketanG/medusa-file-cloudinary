@@ -1,6 +1,6 @@
 {
   "name": "medusa-file-cloudinary",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cloudinary connector for Medusa",
   "main": "index.js",
   "author": "NiketanG",
