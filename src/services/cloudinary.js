@@ -34,10 +34,22 @@ class CloudinaryService extends FileService {
 	}
 
 	delete(file) {
-		return new Promise((resolve, reject) => {
-			cloudinary.uploader.destroy(file, function (result) {
-				resolve(result);
-			});
+		// file is the url of image. We have to extract the public id from url
+		let publicId;
+		if (
+			typeof file === "string" &&
+			file.toLowerCase().includes("cloudinary")
+		) {
+			// Remove the last '/' before public id and '.' before file extension
+			publicId = file.substring(
+				file.lastIndexOf("/") + 1,
+				file.lastIndexOf(".")
+			);
+		} else {
+			publicId = file;
+		}
+		cloudinary.uploader.destroy(publicId, function (result) {
+			resolve(result);
 		});
 	}
 }
