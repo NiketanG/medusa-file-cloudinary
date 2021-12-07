@@ -2,7 +2,7 @@
 
 ![NPM](https://nodei.co/npm/medusa-file-cloudinary.png?downloads=true&downloadRank=true&stars=true)
 
-## Upload files to Cloudinary.
+## Upload files to Cloudinary in [Medusa Commerce](https://www.medusajs.com/)
 
 
 ## Options
