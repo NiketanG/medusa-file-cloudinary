@@ -1,11 +1,17 @@
 {
   "name": "medusa-file-cloudinary",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cloudinary connector for Medusa",
   "main": "index.js",
   "author": "NiketanG",
   "keywords": ["medusa", "medusa-file", "medusa-plugin"],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NiketanG/medusa-file-cloudinary"
+  },
+  "homepage": "https://github.com/NiketanG/medusa-file-cloudinary",
+  "publisher": "NiketanG",
   "dependencies": {
     "cloudinary": "^1.27.1",
     "medusa-core-utils": "^1.1.30"
