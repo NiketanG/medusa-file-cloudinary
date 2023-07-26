@@ -4,7 +4,11 @@
   "description": "Cloudinary connector for Medusa",
   "main": "index.js",
   "author": "NiketanG",
-  "keywords": ["medusa", "medusa-file", "medusa-plugin"],
+  "keywords": [
+    "medusa",
+    "medusa-file",
+    "medusa-plugin"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -19,15 +23,17 @@
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
     "@babel/plugin-transform-instanceof": "^7.12.13",
-    "cross-env": "^7.0.3",    
-    "eslint": "^6.8.0"
+    "@babel/preset-env": "^7.16.4",
+    "cross-env": "^7.0.3",
+    "eslint": "^6.8.0",
+    "jest": "^29.6.1"
   },
   "scripts": {
     "build": "babel src -d .",
     "prepare": "cross-env NODE_ENV=production npm run build",
-    "watch": "babel -w src --out-dir . --ignore **/__tests__"
+    "watch": "babel -w src --out-dir . --ignore **/__tests__",
+    "test": "echo \"No tests\""
   },
   "peerDependencies": {
     "medusa-interfaces": "1.x"
