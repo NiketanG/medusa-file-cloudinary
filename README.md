@@ -12,7 +12,7 @@
     api_key: [cloudinary api key],
     api_secret: [cloudinary api secret],
     secure: [enable secure uploads, default true],
-    root_folder: [folder to which images should be uploaded[
+    root_folder: [folder to which images should be uploaded]
 ```
 
 ## Usage
